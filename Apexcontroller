@@ -1,0 +1,9 @@
+public class SunLife
+ {
+                @AuraEnabled
+    public static List<Account> getAccountRecord()
+   {
+        return new List<Account>([Select Name,OwnerId,Phone,Website,AnnualRevenue 
+                                  from Account);
+    }
+}//
